@@ -1,0 +1,93 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: white;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+     background: linear-gradient(135deg, #0f172a, #1e1b4b, #4c1d95);
+}
+
+.loginBox{
+   height: 400px;
+   width: 600px;
+   border-radius: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(135deg, #0f172a, #1e1b4b, #4c1d95);
+   box-shadow: 0 10px 40px rgba(168, 85, 247, 0.4);
+  backdrop-filter: blur(10px);
+  flex-direction: column;
+}
+.login-box-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+#inpBox{
+    height: 43px;
+    width: 373px;
+    border-radius: 4px;
+    background-color: #1e1b4b;
+    border: none;
+    text-align: center;
+    
+   
+}
+
+.inpButton{
+    height: 43px;
+    width: 373px;
+    border-radius: 4px;
+    background: #8b5cf6;
+    border: none;
+}
+
+
+.inpButton:hover{
+      background: #7c3aed;
+  transform: translateY(-2px);
+
+}
+
+@media (min-width: 320px) {
+    .loginBox {
+        width: 40vmax;
+        height: 40vmax;
+        
+        
+    }
+    #inpBox{
+        width: 80%;
+        align-self: center;
+    }
+    .inpButton{
+        width: 80%;
+        align-self: center;
+    }
+}
+
+/* Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+    .loginBox{
+    height: 400px;
+    width: 600px;
+    }
+    #inpBox {
+    height: 43px;
+    width: 373px;
+    }
+    .inpButton{
+    height: 43px;
+    width: 373px;
+}
+}
